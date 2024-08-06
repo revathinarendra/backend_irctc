@@ -55,6 +55,8 @@ class RegisterAPIView(APIView):
             return Response({"message": "Registration successful, please check your email for verification."}, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+
+
 class LoginAPIView(APIView):
     def post(self, request):
         try:
