@@ -149,10 +149,11 @@ MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
 
 
-# AUTHENTICATION_BACKENDS = [
-#     'backends.custom_email_backend.CustomEmailBackend',  # Custom authentication backend
-#     'django.contrib.auth.backends.ModelBackend',  # Keep the default backend
-# ]
+AUTHENTICATION_BACKENDS = [
+    'backends.custom_auth_backend.CustomAuthBackend',  
+    'django.contrib.auth.backends.ModelBackend',
+]
+
 
 
 from django.contrib.messages import constants as messages
