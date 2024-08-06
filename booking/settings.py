@@ -152,7 +152,7 @@ MEDIA_ROOT = BASE_DIR / "media"
 
 
 AUTHENTICATION_BACKENDS = [
-    'backends.custom_auth_backend.CustomAuthBackend',  
+    'backends.custom_auth_backend.CustomEnailBackend',  
     'django.contrib.auth.backends.ModelBackend',
 ]
 
