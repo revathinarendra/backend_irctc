@@ -130,17 +130,17 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
-CORS_ALLOWED_ORIGINS = [
-    # 'https://wikitube-django-backend.vercel.app',
-    'https://irctc-pi.vercel.app/,'
-    'http://localhost:3000',
-    'http://127.0.0.1:3000'
-]
+# CORS_ALLOWED_ORIGINS = [
+#     # 'https://wikitube-django-backend.vercel.app',
+#     'https://irctc-pi.vercel.app/,'
+#     'http://localhost:3000',
+#     'http://127.0.0.1:3000'
+# ]
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'public', 'static')
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
+STATIC_ROOT = os.path.join(BASE_DIR, 'public/static')
+#STATICFILES_DIRS = [
+   # os.path.join(BASE_DIR, 'public/static'),
+#]
 
 
 # media files configuration
