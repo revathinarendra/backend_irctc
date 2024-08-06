@@ -131,15 +131,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 CORS_ALLOWED_ORIGINS = [
-    'https://backend-irctc.vercel.app'
-    'https://irctc-pi.vercel.app,'
+    'https://backend-irctc.vercel.app',
+    'https://irctc-pi.vercel.app',
     'http://localhost:3000',
-    'http://127.0.0.1:3000'
+    'http://127.0.0.1:3000',
 ]
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'public/static')
 #STATICFILES_DIRS = [
    # os.path.join(BASE_DIR, 'public/static'),
+
 #]
 
 
@@ -148,10 +149,10 @@ MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
 
 
-AUTHENTICATION_BACKENDS = [
-    'backends.custom_auth_backend.CustomEmailBackend',  # Custom authentication backend
-    'django.contrib.auth.backends.ModelBackend',  # Keep the default backend
-]
+# AUTHENTICATION_BACKENDS = [
+#     'backends.custom_email_backend.CustomEmailBackend',  # Custom authentication backend
+#     'django.contrib.auth.backends.ModelBackend',  # Keep the default backend
+# ]
 
 
 from django.contrib.messages import constants as messages
