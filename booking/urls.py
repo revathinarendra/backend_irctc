@@ -21,7 +21,7 @@ from booking.views import welcome_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-     path('welcome/', welcome_view, name='welcome'),
+     path('', welcome_view, name='welcome'),
     path('api/', include('accounts.urls')),
     
 ]
