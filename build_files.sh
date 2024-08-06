@@ -9,12 +9,15 @@
 # Install dependencies from requirements.txt
 /usr/bin/python3.9 -m pip install -r requirements.txt
 
+# Activate virtual environment
+source /path/to/venv/bin/activate
+
 # Create static directory if it doesn't exist
 mkdir -p /vercel/path0/static
 
 # Collect static files
-python3.9 manage.py collectstatic --noinput
+python manage.py collectstatic --noinput
 
 # Apply database migrations
-python3.9 manage.py makemigrations
-python3.9 manage.py migrate
+python manage.py makemigrations
+python manage.py migrate
